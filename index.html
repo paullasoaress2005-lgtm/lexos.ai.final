@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LEX.OS AI: inteligencia artificial aplicada a operacao juridica, BPO, treinamentos, agentes e marketplace."
+    />
+    <title>LEX.OS AI Ultimate Two</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="visual-backdrop" aria-hidden="true">
+      <img id="activeVisual" src="./visuals/bpo.svg" alt="" />
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar" aria-label="Navegacao principal">
+      <a class="brand" href="/institucional" aria-label="LEX.OS AI">
+        <img src="./assets/lexos-logo.png" alt="" />
+        <span>LEX.OS AI</span>
+      </a>
+      <div class="topbar__meta" aria-label="Local e horario">
+        <span>Sao Luis, MA</span>
+        <span id="clock">BRT 00:00</span>
+      </div>
+      <nav class="topbar__nav" aria-label="Secoes">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Metodo</a>
+      </nav>
+      <div class="progress" aria-label="Progresso da apresentacao">
+        <span id="progressText">0%</span>
+        <i id="progressBar"></i>
+      </div>
+    </header>
+
+    <main class="experience" id="projetos">
+      <section class="intro" aria-label="Apresentacao">
+        <p class="kicker">portfolio juridico 2026</p>
+        <h1>LEX.OS AI. Operacao juridica aumentada por inteligencia aplicada.</h1>
+      </section>
+
+      <section class="project-list" aria-label="Lista de projetos">
+        <button class="project-row is-active" type="button" data-index="0">
+          <span>01</span>
+          <strong>BPO Juridico</strong>
+        </button>
+        <button class="project-row" type="button" data-index="1">
+          <span>02</span>
+          <strong>Treinamento</strong>
+        </button>
+        <button class="project-row" type="button" data-index="2">
+          <span>03</span>
+          <strong>Agentes e Sistemas</strong>
+        </button>
+        <button class="project-row" type="button" data-index="3">
+          <span>04</span>
+          <strong>Raio-X IA</strong>
+        </button>
+        <button class="project-row" type="button" data-index="4">
+          <span>05</span>
+          <strong>LEX.OS Store</strong>
+        </button>
+      </section>
+
+      <section class="project-copy" aria-live="polite" aria-label="Projeto ativo">
+        <p class="eyebrow" id="activeEyebrow">Frente 01</p>
+        <div class="project-copy__details">
+          <p>
+            <span>Area.</span>
+            <strong id="activeArea">Producao assistida</strong>
+          </p>
+          <p>
+            <span>Ano.</span>
+            <strong id="activeYear">2026</strong>
+          </p>
+        </div>
+        <p class="project-copy__description" id="activeDescription">
+          Fluxos operacionais para transformar volume juridico em rotina
+          controlada, com IA como apoio de producao, revisao e priorizacao.
+        </p>
+        <a class="visit-link" id="activeLink" href="/bpo-juridico">
+          <span>Visit</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17 17 7M9 7h8v8" />
+          </svg>
+        </a>
+      </section>
+
+      <footer class="dock" aria-label="Controle dos projetos">
+        <div class="counter">
+          <span>project</span>
+          <strong id="counterCurrent">01</strong>
+          <span>/ 05</span>
+        </div>
+        <div class="steps" role="tablist" aria-label="Selecionar projeto">
+          <button class="is-active" type="button" data-index="0" aria-label="BPO Juridico">1</button>
+          <button type="button" data-index="1" aria-label="Treinamento">2</button>
+          <button type="button" data-index="2" aria-label="Agentes e Sistemas">3</button>
+          <button type="button" data-index="3" aria-label="Raio-X da IA Juridica">4</button>
+          <button type="button" data-index="4" aria-label="LEX.OS Store">5</button>
+        </div>
+        <p>portfolio 2026 / scroll swipe to discover</p>
+      </footer>
+    </main>
+
+    <section class="method-panel" id="sobre" aria-label="Metodo LEX.OS">
+      <p>Metodo LEX.OS</p>
+      <strong>Diagnostico, desenho de processo, automacao assistida e acompanhamento humano.</strong>
+        <a class="magnetic" href="/institucional">Ver site institucional</a>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/store",
+      "destination": "https://lexos-store.vercel.app",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/institucional",
+      "destination": "/institucional.html"
+    },
+    {
+      "source": "/bpo-juridico",
+      "destination": "/bpo-juridico.html"
+    },
+    {
+      "source": "/treinamento",
+      "destination": "/treinamento.html"
+    },
+    {
+      "source": "/training",
+      "destination": "/treinamento.html"
+    },
+    {
+      "source": "/agentes-sistemas",
+      "destination": "/agents-systems.html"
+    },
+    {
+      "source": "/agents-systems",
+      "destination": "/agents-systems.html"
+    },
+    {
+      "source": "/raio-x",
+      "destination": "/raio-x.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
