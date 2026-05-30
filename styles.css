@@ -21,6 +21,7 @@ html {
   height: 100%;
   background: var(--bg);
   color: var(--ink);
+  color-scheme: dark;
   font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   overflow: hidden;
 }
@@ -36,10 +37,34 @@ button,
 a {
   color: inherit;
   font: inherit;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(112, 221, 255, 0.16);
 }
 
 button {
   border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 40;
+  padding: 10px 14px;
+  color: #06111c;
+  background: var(--cyan);
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .grid-field,
