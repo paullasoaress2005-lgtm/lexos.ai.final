@@ -7,6 +7,7 @@ const interactiveSurfaces = document.querySelectorAll(
 );
 const root = document.documentElement;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const finePointer = window.matchMedia("(pointer: fine)").matches;
 
 const setHeaderState = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -44,6 +45,8 @@ if (!reduceMotion) {
 
       root.style.setProperty("--light-x", `${clientX}px`);
       root.style.setProperty("--light-y", `${clientY}px`);
+      root.style.setProperty("--cursor-x", `${clientX}px`);
+      root.style.setProperty("--cursor-y", `${clientY}px`);
       root.style.setProperty("--grid-shift-x", `${offsetX.toFixed(2)}px`);
       root.style.setProperty("--grid-shift-y", `${offsetY.toFixed(2)}px`);
     });
@@ -51,10 +54,22 @@ if (!reduceMotion) {
 
   const trackPointer = (event) => {
     updateInteraction(event.clientX, event.clientY, event.pointerType);
+    if (finePointer && event.pointerType !== "touch") {
+      document.body.classList.add("is-pointer-active");
+    }
   };
 
   window.addEventListener("pointermove", trackPointer, { passive: true });
   window.addEventListener("pointerdown", trackPointer, { passive: true });
+  window.addEventListener(
+    "pointerleave",
+    () => {
+      document.body.classList.remove("is-pointer-active");
+      root.style.setProperty("--grid-shift-x", "0px");
+      root.style.setProperty("--grid-shift-y", "0px");
+    },
+    { passive: true }
+  );
 
   interactiveSurfaces.forEach((surface) => {
     surface.addEventListener(
@@ -67,6 +82,28 @@ if (!reduceMotion) {
       { passive: true }
     );
   });
+
+  if (finePointer) {
+    document.querySelectorAll(".button").forEach((button) => {
+      button.addEventListener(
+        "pointermove",
+        (event) => {
+          const bounds = button.getBoundingClientRect();
+          const offsetX = (event.clientX - bounds.left - bounds.width / 2) * 0.1;
+          const offsetY = (event.clientY - bounds.top - bounds.height / 2) * 0.14;
+
+          button.style.setProperty("--mag-x", `${offsetX.toFixed(2)}px`);
+          button.style.setProperty("--mag-y", `${offsetY.toFixed(2)}px`);
+        },
+        { passive: true }
+      );
+
+      button.addEventListener("pointerleave", () => {
+        button.style.setProperty("--mag-x", "0px");
+        button.style.setProperty("--mag-y", "0px");
+      });
+    });
+  }
 }
 
 if ("IntersectionObserver" in window) {
