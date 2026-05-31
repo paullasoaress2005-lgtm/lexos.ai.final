@@ -1,19 +1,19 @@
 const projects = [
   {
     eyebrow: "Frente 01",
-    area: "Producao assistida",
+    area: "Produção assistida",
     year: "2026",
     description:
-      "Fluxos operacionais para transformar volume juridico em rotina controlada, com IA como apoio de producao, revisao e priorizacao.",
+      "Fluxos operacionais para transformar volume jurídico em rotina controlada, com IA como apoio de produção, revisão e priorização.",
     href: "/bpo-juridico",
     visual: "./visuals/bpo.svg",
   },
   {
     eyebrow: "Frente 02",
-    area: "Capacitacao aplicada",
+    area: "Capacitação aplicada",
     year: "2026",
     description:
-      "Formacoes para equipes juridicas adotarem IA com seguranca, linguagem simples e exemplos conectados ao trabalho real.",
+      "Formações para equipes jurídicas adotarem IA com segurança, linguagem simples e exemplos conectados ao trabalho real.",
     href: "/treinamento",
     visual: "./visuals/training.svg",
   },
@@ -22,25 +22,25 @@ const projects = [
     area: "Arquitetura de IA",
     year: "2026",
     description:
-      "Agentes, automacoes e sistemas internos desenhados para reduzir retrabalho e organizar tarefas repetitivas da operacao juridica.",
+      "Agentes, automações e sistemas internos desenhados para reduzir retrabalho e organizar tarefas repetitivas da operação jurídica.",
     href: "/agentes-sistemas",
     visual: "./visuals/agents.svg",
   },
   {
     eyebrow: "Frente 04",
-    area: "Diagnostico executivo",
+    area: "Diagnóstico executivo",
     year: "2026",
     description:
-      "Uma leitura objetiva da maturidade da operacao, com mapa de oportunidades para aplicar IA sem perder governanca.",
+      "Uma leitura objetiva da maturidade da operação, com mapa de oportunidades para aplicar IA sem perder governança.",
     href: "/raio-x",
     visual: "./visuals/raiox.svg",
   },
   {
     eyebrow: "Marketplace 05",
-    area: "Plugins juridicos",
+    area: "Plugins jurídicos",
     year: "2026",
     description:
-      "Um ambiente de compra e descoberta para plugins, pacotes e solucoes prontas que ampliam o ecossistema LEX.OS.",
+      "Um ambiente de compra e descoberta para plugins, pacotes e soluções prontas que ampliam o ecossistema LEX.OS.",
     href: "/store",
     visual: "./visuals/store.svg",
   },
