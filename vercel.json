@@ -2,23 +2,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/plugins",
-      "destination": "/store/plugins",
-      "permanent": true
-    },
-    {
-      "source": "/conteudos",
-      "destination": "/store/conteudos",
-      "permanent": true
-    },
-    {
-      "source": "/comunidade",
-      "destination": "/store/comunidade",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/store",
@@ -34,6 +17,18 @@
     },
     {
       "source": "/store/comunidade",
+      "destination": "/store-comunidade.html"
+    },
+    {
+      "source": "/plugins",
+      "destination": "/store-plugins.html"
+    },
+    {
+      "source": "/conteudos",
+      "destination": "/store-conteudos.html"
+    },
+    {
+      "source": "/comunidade",
       "destination": "/store-comunidade.html"
     },
     {
