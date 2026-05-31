@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/assets/lexos-favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/lexos-favicon.png" />
+    <title>Plugins LEX.OS | Marketplace jurídico com IA</title>
+    <meta
+      name="description"
+      content="Catálogo de plugins, pacotes e agentes LEX.OS para operação jurídica com IA."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/store.css" />
+  </head>
+  <body data-page="plugins">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <a class="community-strip" data-whatsapp-group target="_blank" rel="noreferrer">
+      <span>→ Entre no grupo LEX.OS AI</span>
+      <strong>receba avisos de novos plugins</strong>
+    </a>
+    <header class="site-header">
+      <a class="brand" href="/store" aria-label="LEX.OS Store - início">
+        <span class="brand-mark"><img src="/assets/lexos-logo.png" alt="" width="548" height="555" /></span>
+        <span><strong>LEX.OS Store</strong><small>Plugins e operação jurídica com IA</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="/store/plugins" aria-current="page">Plugins</a>
+        <a href="/store/conteudos">Conteúdos</a>
+        <a href="/store/comunidade">Comunidade</a>
+        <a href="/store#como-comprar">Como comprar</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile">
+      <a href="/store/plugins" aria-current="page">Plugins</a>
+      <a href="/store/conteudos">Conteúdos</a>
+      <a href="/store/comunidade">Comunidade</a>
+      <a href="/store#como-comprar">Como comprar</a>
+    </nav>
+
+    <main>
+      <section class="page-hero section-shell">
+        <div data-reveal>
+          <a class="breadcrumb" href="/store">← Início</a>
+          <p class="eyebrow">/// Marketplace · catálogo</p>
+          <h1>Plugins, pacotes e agentes para advocacia com IA.</h1>
+          <p class="page-lede">
+            Cada item foi escrito como uma unidade operacional: o que faz, para quem serve, quais
+            comandos ativa e como deve ser revisado.
+          </p>
+        </div>
+        <aside class="page-panel" data-reveal>
+          <span>Pagamento externo</span>
+          <p>Quando os produtos forem cadastrados na Kirvano, basta colar o link em `data/catalogo.json`.</p>
+        </aside>
+      </section>
+
+      <section class="section-shell catalog-section">
+        <div class="catalog-toolbar" data-reveal>
+          <div>
+            <p class="eyebrow">Catálogo</p>
+            <h2>Escolha por tipo de operação.</h2>
+          </div>
+          <div class="filter-row" aria-label="Filtros de catálogo">
+            <button class="chip active" type="button" data-filter="Todos">Todos</button>
+            <button class="chip" type="button" data-filter="Plugin">Plugins</button>
+            <button class="chip" type="button" data-filter="Pacote">Pacotes</button>
+            <button class="chip" type="button" data-filter="Treinamento">Treinamentos</button>
+            <button class="chip" type="button" data-filter="Agente">Agentes</button>
+          </div>
+        </div>
+        <div class="product-grid dense" id="product-catalog"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="/store" aria-label="LEX.OS Store - início">
+        <span class="brand-mark"><img src="/assets/lexos-logo.png" alt="" width="548" height="555" /></span>
+        <span><strong>LEX.OS Store</strong><small>Plugins e operação jurídica com IA</small></span>
+      </a>
+      <p>Catálogo editável por arquivo de dados. Sem painel administrativo nesta primeira versão.</p>
+      <div>
+        <a href="/store/conteudos">Conteúdos</a>
+        <a data-whatsapp-group target="_blank" rel="noreferrer">Grupo WhatsApp</a>
+      </div>
+    </footer>
+    <script src="/store.js"></script>
+  </body>
+</html>

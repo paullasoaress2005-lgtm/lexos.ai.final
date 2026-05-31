@@ -1,0 +1,141 @@
+{
+  "whatsappGroupUrl": "https://chat.whatsapp.com/Cc0oM8GN2aJGudB9Q4MQZm?mode=gi_t",
+  "supportWhatsappUrl": "https://wa.me/5598981557382?text=Ol%C3%A1%2C%20vim%20pela%20loja%20da%20LEX.OS%20AI%20e%20quero%20entender%20qual%20pacote%20faz%20sentido%20para%20meu%20escrit%C3%B3rio.",
+  "kirvanoSignupUrl": "https://app.kirvano.com/signup",
+  "products": [
+    {
+      "id": "lexos-adv-os",
+      "number": "01",
+      "status": "Disponível",
+      "category": "Plugin",
+      "name": "lexos-adv-os",
+      "title": "Sistema operacional do escritório jurídico",
+      "summary": "Pacote central para organizar briefing, análise, produção, revisão e entrega de minutas com método LEX.OS.",
+      "price": "R$ 497,00",
+      "terms": "pagamento único · versão entregue · suporte inicial",
+      "checkoutUrl": "",
+      "commands": ["/briefing", "/minuta", "/revisao", "/parecer", "/entrega"],
+      "features": [
+        "Persona jurídica configurável para o padrão do escritório",
+        "Biblioteca de comandos para produção e revisão de peças",
+        "Checklist de ancoragem documental e validação humana",
+        "Fluxo para reduzir retrabalho entre advogado, equipe e IA"
+      ]
+    },
+    {
+      "id": "minutas-avancadas",
+      "number": "02",
+      "status": "Disponível",
+      "category": "Plugin",
+      "name": "minutas-avancadas",
+      "title": "Produção assistida de minutas avançadas",
+      "summary": "Comandos para transformar briefing, documentos e tese em minuta estruturada para revisão do advogado responsável.",
+      "price": "R$ 397,00",
+      "terms": "pagamento único · suporte inicial",
+      "checkoutUrl": "",
+      "commands": ["/inicial", "/contestacao", "/recurso", "/manifestacao"],
+      "features": [
+        "Estrutura de peça com tese, fatos, fundamentos e pedidos",
+        "Roteiro de conferência antes da entrega",
+        "Organização de documentos e pontos de atenção",
+        "Indicação clara do que exige validação humana"
+      ]
+    },
+    {
+      "id": "jurisprudencia-validada",
+      "number": "03",
+      "status": "Disponível",
+      "category": "Plugin",
+      "name": "jurisprudencia-validada",
+      "title": "Pesquisa e validação de jurisprudência",
+      "summary": "Fluxo para buscar, organizar e conferir julgados antes de inserir fundamentos em peças, pareceres e notas técnicas.",
+      "price": "R$ 297,00",
+      "terms": "pagamento único · suporte inicial",
+      "checkoutUrl": "",
+      "commands": ["/buscar-julgados", "/validar-ementa", "/mapa-de-tese"],
+      "features": [
+        "Roteiro de pesquisa com fontes e critérios de validação",
+        "Separação entre precedentes favoráveis, neutros e contrários",
+        "Quadro de risco para uso responsável da jurisprudência",
+        "Modelo de citação para revisão final do advogado"
+      ]
+    },
+    {
+      "id": "bpo-juridico-kit",
+      "number": "04",
+      "status": "Disponível",
+      "category": "Pacote",
+      "name": "kit-bpo-juridico",
+      "title": "Kit operacional para BPO jurídico com IA",
+      "summary": "Modelos de briefing, triagem, marco zero, controle de prazo e entrega para produção jurídica assistida.",
+      "price": "R$ 247,00",
+      "terms": "pagamento único · arquivos e guias",
+      "checkoutUrl": "",
+      "commands": ["/triagem", "/marco-zero", "/controle-entrega"],
+      "features": [
+        "Formulário de briefing qualificado",
+        "Modelo de esteira com etapas e responsáveis",
+        "Checklist de revisão antes de enviar a minuta",
+        "Quadro de controle para pedidos, prazos e entregas"
+      ]
+    },
+    {
+      "id": "treinamento-ia-juridica",
+      "number": "05",
+      "status": "Lista de interesse",
+      "category": "Treinamento",
+      "name": "treinamento-ia-juridica",
+      "title": "Treinamento de IA para equipes jurídicas",
+      "summary": "Aulas práticas para transformar o uso solto de IA em rotina governada dentro do escritório.",
+      "price": "Sob consulta",
+      "terms": "turmas fechadas · diagnóstico prévio",
+      "checkoutUrl": "",
+      "commands": ["/plano-aula", "/rotina-equipe", "/governanca"],
+      "features": [
+        "Engenharia de comandos jurídicos aplicada a casos reais",
+        "Análise processual, provas e jurisprudência",
+        "Governança, limites de uso e trilha de validação",
+        "Implantação gradual com rotina do escritório"
+      ]
+    },
+    {
+      "id": "agente-whatsapp-triagem",
+      "number": "06",
+      "status": "Em construção",
+      "category": "Agente",
+      "name": "agente-whatsapp-triagem",
+      "title": "Triagem de WhatsApp para operação jurídica",
+      "summary": "Agente para classificar mensagens, organizar demandas e preparar respostas com tom profissional e conformidade.",
+      "price": "Pré-lista",
+      "terms": "sem pré-venda · entrar na lista",
+      "checkoutUrl": "",
+      "commands": ["/classificar", "/responder", "/encaminhar"],
+      "features": [
+        "Classificação de lead, cliente, cartório, perito e parte contrária",
+        "Sugestões de resposta com linguagem profissional",
+        "Registro do contexto para CRM ou planilha",
+        "Camada de cautela para comunicação jurídica"
+      ]
+    }
+  ],
+  "contents": [
+    {
+      "tag": "Guia",
+      "title": "Como preparar o escritório para usar IA com governança",
+      "description": "Um roteiro inicial para sair do improviso e criar critérios de uso, revisão e responsabilidade técnica.",
+      "url": "/store/conteudos"
+    },
+    {
+      "tag": "Checklist",
+      "title": "Validação humana antes de usar uma peça gerada com IA",
+      "description": "Pontos que precisam ser conferidos antes de qualquer assinatura, envio ou protocolo.",
+      "url": "/store/conteudos"
+    },
+    {
+      "tag": "Fluxo",
+      "title": "Do briefing à minuta avançada",
+      "description": "O desenho de uma esteira simples para organizar demanda, documentos, tese e entrega.",
+      "url": "/store/conteudos"
+    }
+  ]
+}

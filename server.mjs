@@ -11,10 +11,18 @@ const types = {
   ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml; charset=utf-8",
   ".png": "image/png",
+  ".json": "application/json; charset=utf-8",
 };
 
 const routes = {
   "/": "index.html",
+  "/store": "store.html",
+  "/store/plugins": "store-plugins.html",
+  "/store/conteudos": "store-conteudos.html",
+  "/store/comunidade": "store-comunidade.html",
+  "/plugins": "store-plugins.html",
+  "/conteudos": "store-conteudos.html",
+  "/comunidade": "store-comunidade.html",
   "/institucional": "institucional.html",
   "/bpo-juridico": "bpo-juridico.html",
   "/treinamento": "treinamento.html",
@@ -26,12 +34,6 @@ const routes = {
 
 const server = http.createServer(async (request, response) => {
   const url = new URL(request.url || "/", `http://127.0.0.1:${port}`);
-
-  if (url.pathname === "/store") {
-    response.writeHead(302, { Location: "https://lexos-store.vercel.app" });
-    response.end();
-    return;
-  }
 
   const requestedPath = routes[url.pathname] || url.pathname.slice(1);
   const filePath = path.resolve(root, requestedPath);

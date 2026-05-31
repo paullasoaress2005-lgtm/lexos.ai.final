@@ -4,12 +4,38 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/store",
-      "destination": "https://lexos-store.vercel.app",
-      "permanent": false
+      "source": "/plugins",
+      "destination": "/store/plugins",
+      "permanent": true
+    },
+    {
+      "source": "/conteudos",
+      "destination": "/store/conteudos",
+      "permanent": true
+    },
+    {
+      "source": "/comunidade",
+      "destination": "/store/comunidade",
+      "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/store",
+      "destination": "/store.html"
+    },
+    {
+      "source": "/store/plugins",
+      "destination": "/store-plugins.html"
+    },
+    {
+      "source": "/store/conteudos",
+      "destination": "/store-conteudos.html"
+    },
+    {
+      "source": "/store/comunidade",
+      "destination": "/store-comunidade.html"
+    },
     {
       "source": "/institucional",
       "destination": "/institucional.html"
