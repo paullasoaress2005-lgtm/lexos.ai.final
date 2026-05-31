@@ -359,10 +359,13 @@ body.is-switching .visual-backdrop img {
   letter-spacing: 0;
 }
 
-.project-row:hover,
 .project-row.is-active {
   color: rgba(247, 251, 255, 0.98);
   transform: translateX(10px);
+}
+
+.project-row:not(.is-active):hover {
+  transform: translateX(10px) scale(1.018);
 }
 
 .project-row.is-active::before {
