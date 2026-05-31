@@ -4,60 +4,36 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/store",
-      "destination": "/store.html"
-    },
-    {
       "source": "/store/plugins",
-      "destination": "/store-plugins.html"
+      "destination": "/store-plugins"
     },
     {
       "source": "/store/conteudos",
-      "destination": "/store-conteudos.html"
+      "destination": "/store-conteudos"
     },
     {
       "source": "/store/comunidade",
-      "destination": "/store-comunidade.html"
+      "destination": "/store-comunidade"
     },
     {
       "source": "/plugins",
-      "destination": "/store-plugins.html"
+      "destination": "/store-plugins"
     },
     {
       "source": "/conteudos",
-      "destination": "/store-conteudos.html"
+      "destination": "/store-conteudos"
     },
     {
       "source": "/comunidade",
-      "destination": "/store-comunidade.html"
-    },
-    {
-      "source": "/institucional",
-      "destination": "/institucional.html"
-    },
-    {
-      "source": "/bpo-juridico",
-      "destination": "/bpo-juridico.html"
-    },
-    {
-      "source": "/treinamento",
-      "destination": "/treinamento.html"
+      "destination": "/store-comunidade"
     },
     {
       "source": "/training",
-      "destination": "/treinamento.html"
+      "destination": "/treinamento"
     },
     {
       "source": "/agentes-sistemas",
       "destination": "/agents-systems"
-    },
-    {
-      "source": "/agents-systems",
-      "destination": "/agents-systems.html"
-    },
-    {
-      "source": "/raio-x",
-      "destination": "/raio-x.html"
     }
   ],
   "headers": [
